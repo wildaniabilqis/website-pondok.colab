@@ -1,0 +1,102 @@
+/* Variabel Warna */
+:root {
+    --hijau-tua: #1b5e20;
+    --hijau-medium: #2e7d32;
+    --hijau-muda: #e8f5e9;
+    --putih: #ffffff;
+    --gelap: #333;
+    --abu: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--gelap);
+    line-height: 1.6;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--hijau-medium);
+    margin: 10px auto; 
+}
+.btn-main {
+    padding: 12px 30px;
+    background: var(--hijau-medium);
+    color: var(--putih);
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Section Styling */
+.section { padding: 80px 20px; }
+.tulis { text-align: center; margin-bottom: 40px; }
+.underline {
+    width: 60px;
+    height: 4px;
+    background: var(--hijau-medium);
+    margin: 10px auto;
+}
+
+.bg-light { background: var(--hijau-muda); }
+
+/* Profil Grid */
+.foto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.profil-img img { width: 100%; border-radius: 10px; box-shadow: 10px 10px 0 var(--hijau-medium); }
+
+.vimi { list-style: none; margin-top: 20px; }
+.vimi li { margin-bottom: 10px; display: flex; align-items: center; }
+.vimi i { color: var(--hijau-medium); margin-right: 10px; }
+
+.tahap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.kartu {
+    background: var(--putih);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.kartu:hover { transform: translateY(-10px); }
+.kartu i { font-size: 3rem; color: var(--hijau-medium); margin-bottom: 15px; }
+
+/* Footer */
+footer {
+    background: var(--hijau-tua);
+    color: var(--putih);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.socials a { color: var(--putih); font-size: 1.5rem; margin: 0 10px; }
+
