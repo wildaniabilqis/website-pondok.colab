@@ -1,11 +1,152 @@
- body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #0beb0b; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #333; color: white; padding: 10px; text-align: center; }
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #329c32; color: white; padding: 20px; text-align: center; }
         nav a { color: white; margin: 0 15px; text-decoration: none; }
         .banner { background-color: #ddd; padding: 50px; text-align: center; }
         .content { padding: 20px; text-align: center; }
-        .footer { background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .footer { background-color: #1B5E20; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
 
-.gambar-pondok {
-    width: 100%;
+
+/* ===== RESET & GLOBAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 12px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+.menu a {
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #2e7d32;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 100vh;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("img/gambar 1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-main {
+    padding: 14px 40px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    background: #1b5e20;
+    transform: translateY(-3px);
+}
+
+/* ===== SEKILAS PONDOK ===== */
+.content {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 2rem;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #1B5E20;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu li {
+        margin-left: 15px;
+    }
 }
