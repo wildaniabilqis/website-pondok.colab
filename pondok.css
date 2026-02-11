@@ -173,26 +173,31 @@ h2 {
     color: #333;
 }
 
+.judul-galeri {
+    text-align: center; /* Membuat teks di tengah */
+    color: #1b5e20;      /* Sesuaikan warna dengan tema pondok */
+    margin-top: 40px;    /* Jarak ke atas */
+    margin-bottom: 20px; /* Jarak ke galeri di bawahnya */
+    font-family: 'Poppins', sans-serif; /* Pastikan font sama */
+}
+
 .galery-pondok {
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 0 auto; /* Tengah-tengah layar */
     padding: 30px;
     background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Bayangan sedikit lebih halus */
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     display: grid;
-    /* PERBAIKAN DI SINI: minimax -> minmax */
     grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 16px;
-    /* Tambahan agar seimbang di tengah jika foto kurang */
     justify-items: center; 
 }
 
 .galery-pondok img {
     width: 100%;
     height: 170px;
-    object-fit: cover; /* Memastikan foto tidak gepeng */
+    object-fit: cover;
     border-radius: 12px;
     border: 1.5px solid white;
     background-color: white;
@@ -204,6 +209,7 @@ h2 {
     transform: translateY(-4px) scale(1.04);
     box-shadow: 0 8px 18px rgba(0,0,0,0.4);
 }
+
 
 /* Footer */
 footer {
