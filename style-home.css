@@ -1,82 +1,41 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #329c32; color: white; padding: 20px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .banner { background-color: #ddd; padding: 50px; text-align: center; }
-        .content { padding: 20px; text-align: center; }
-        .footer { background-color: #1B5E20; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
 
-
-/* ===== RESET & GLOBAL ===== */
+* { box-sizing: border-box; }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #e9eff0;
     line-height: 1.7;
+    color: #333;
 }
+a { text-decoration: none; }
 
-a {
-    text-decoration: none;
-}
-
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: #ffffff;
+    background-color: #f7f8f8;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 100;
 }
+.logo { display: flex; align-items: center; }
+.logo img { height: 50px; margin-right: 12px; }
+.logo span { font-weight: bold; font-size: 1.1rem; color: #1B5E20; }
+.menu ul { display: flex; list-style: none; margin: 0; padding: 0; }
+.menu li { margin-left: 25px; }
+.menu a { color: #333; font-weight: 500; transition: 0.3s; }
+.menu a:hover { color: #2e7d32; }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 50px;
-    margin-right: 12px;
-}
-
-.logo span {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: #2c3e50;
-}
-
-.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin-left: 25px;
-}
-
-.menu a {
-    color: #333;
-    font-weight: 500;
-}
-
-.menu a:hover {
-    color: #2e7d32;
-}
-
-/* ===== HERO SECTION ===== */
+/* HERO SECTION */
 .hero {
-    height: 100vh;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("img/gambar 1.png");
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/gambar 1.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,69 +43,45 @@ a {
     color: white;
     padding: 0 20px;
 }
+.hero-content h1 { font-size: 3rem; margin-bottom: 15px; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 30px; }
+.btn-main { padding: 14px 40px; background: #2e7d32; color: white; border-radius: 50px; font-weight: bold; display: inline-block; transition: 0.3s; }
+.btn-main.yellow { background: #ffc107; color: #333; }
+.btn-main:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+.btn-outline { padding: 13px 38px; border: 2px solid white; color: white; border-radius: 50px; margin-left: 10px; font-weight: bold; transition: 0.3s; }
+.btn-outline:hover { background: white; color: #333; }
 
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
+/* SEKILAS PONDOK */
+.content-section { padding: 80px 10%; text-align: center; background: white; }
+.content-section h3 { font-size: 2.2rem; color: #1b5e20; margin-bottom: 20px; }
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    font-weight: 300;
-}
+/* STATS */
+.stats { background: #1B5E20; color: white; display: flex; justify-content: space-around; padding: 50px 10%; text-align: center; flex-wrap: wrap; }
+.stat-item { flex: 1; min-width: 200px; padding: 10px; }
+.stat-item h2 { font-size: 2.5rem; margin: 0; }
 
-.btn-main {
-    padding: 14px 40px;
-    background: #2e7d32;
-    color: white;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block;
-}
+/* PROGRAM CARDS */
+.program-section { padding: 80px 10%; }
+.title-center { text-align: center; color: #1B5E20; font-size: 2rem; margin-bottom: 40px; }
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.card { background: white; padding: 40px 20px; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-bottom: 4px solid #2e7d32; transition: 0.3s; }
+.card:hover { transform: translateY(-10px); }
+.card-icon { font-size: 40px; margin-bottom: 15px; }
 
-.btn-main:hover {
-    background: #1b5e20;
-    transform: translateY(-3px);
-}
+/* PENDAFTARAN */
+.pendaftaran { padding: 80px 10%; text-align: center; background: #fdfdfd; }
+.step-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px; }
+.step { background: white; padding: 25px; width: 180px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+.step span { background: #2e7d32; color: white; width: 35px; height: 35px; display: inline-block; border-radius: 50%; line-height: 35px; font-weight: bold; margin-bottom: 10px; }
 
-/* ===== SEKILAS PONDOK ===== */
-.content {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-    text-align: center;
-}
+/* FOOTER */
+.footer { background-color: #1B5E20; color: white; text-align: center; padding: 40px 10%; margin-top: 50px; }
+.footer-info h4 { margin-bottom: 10px; font-size: 1.3rem; }
+.footer hr { border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0; }
 
-.content h3 {
-    font-size: 2rem;
-    color: #1b5e20;
-    margin-bottom: 20px;
-}
-
-.content p {
-    color: #444;
-    margin-bottom: 15px;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-    background-color: #1B5E20;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 60px;
-}
-
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .menu li {
-        margin-left: 15px;
-    }
+    .hero-content h1 { font-size: 2.2rem; }
+    .menu { display: none; } /* Bisa ditambahkan Hamburger Menu nanti */
+    .btn-outline { margin-left: 0; margin-top: 10px; }
 }
