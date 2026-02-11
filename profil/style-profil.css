@@ -12,6 +12,26 @@ body {
     color: #2f4f3a;
 }
 
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #f7f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo { display: flex; align-items: center; }
+.logo img { height: 50px; margin-right: 12px; }
+.logo span { font-weight: bold; font-size: 1.1rem; color: #1B5E20; }
+.menu ul { display: flex; list-style: none; margin: 0; padding: 0; }
+.menu li { margin-left: 25px; }
+.menu a { color: #333; font-weight: 500; transition: 0.3s; }
+.menu a:hover { color: #2e7d32; }
+
 .container {
     max-width: 900px;
     margin: 40px auto;
@@ -175,6 +195,12 @@ body {
     color: #3f5f4a;
     font-size: 15px;
 }
+
+/* FOOTER */
+.footer { background-color: #1B5E20; color: white; text-align: center; padding: 40px 10%; margin-top: 50px; }
+.footer-info h4 { margin-bottom: 10px; font-size: 1.3rem; }
+.footer hr { border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 20px 0; }
+
 
 @media (max-width: 600px) {
     .profile h1 {
