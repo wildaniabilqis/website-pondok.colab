@@ -95,6 +95,16 @@ nav ul li a:hover {
 }
 
 /* About Section */
+.ty {
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+}
+
+.about-text {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .about {
     padding: 80px 5%;
     background-color: #f9f9f9;
@@ -150,19 +160,9 @@ h2 {
     transition: 0.3s;
 }
 
-.kotak {
-    background-color: white;
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
 .program-card:hover {
     transform: translateY(-10px);
 }
-
 .program-card i {
     color: #1b5e20;
     margin-bottom: 20px;
@@ -171,6 +171,38 @@ h2 {
 .program-card h3 {
     margin-bottom: 15px;
     color: #333;
+}
+
+.galery-pondok {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* Bayangan sedikit lebih halus */
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    /* PERBAIKAN DI SINI: minimax -> minmax */
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+    /* Tambahan agar seimbang di tengah jika foto kurang */
+    justify-items: center; 
+}
+
+.galery-pondok img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover; /* Memastikan foto tidak gepeng */
+    border-radius: 12px;
+    border: 1.5px solid white;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.galery-pondok img:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
 }
 
 /* Footer */
