@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 28px;
+    color: #1d976c;
+    margin-bottom: 10px;
+}
+
+.desc {
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.contact-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info, .form {
+    flex: 1;
+    min-width: 280px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.info h2, .form h2 {
+    color: #1d976c;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.info h3 {
+    margin-top: 15px;
+    color: #1d976c;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 
+    0.9;
+}
+
+.map {
+    margin-top: 25px;
+}
+
+.map h2 {
+    color: #1d976c;
+    margin-bottom: 10px;
+}
+
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
